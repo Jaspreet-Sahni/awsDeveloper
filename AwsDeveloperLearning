@@ -25,3 +25,16 @@ h) MFA(Multi Factor Authenticaon) can be setup
 i) IAM has prdefined 'managed Plocies'
 
 ----------IAM Ends Here---------------------
+
+-----------EC2 Starts here------------
+2) EC2
+a) EC2 is the most popular AWS offering
+b) It mainly consist of the capability of
+   .) Renting Virtual Machine (EC2)
+   .)Storing data on virtual drives (EBS)
+   .) Distributing load across machines (ELB)
+   .) Scaling the services using an auto-scaling group (ASG)
+
+c) AMI (AMAZON MACHINE IMAGE)
+
+-----------EC2 ENDS here------------
