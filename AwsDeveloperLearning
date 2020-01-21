@@ -1,0 +1,27 @@
+----------IAM Start Here---------------------
+IAM
+1) IAM(Identity and Access Management) Introduction
+ a) Your Whole AWS Security is there:
+  .) User
+  .) Groups
+  .) Roles
+b) Root Account should never be used(and shared)
+c) Users must be created with proper permission
+d) IAM is at the center of AWS( i.e Global)
+e) IAM has Policies which are written in JSON
+
+** Root account is the account which has all rights of AWS and which create User Profile in AWS 
+and provide access to other USER of AWS to access its AWS Services.
+
+Users--> Usually a physical person
+Groups --> Functions( admins, devops) & Teams (enginnering , design)
+Roles----> Internal Usage with AWS resources
+
+Policies(JSON Document) -- It define what each of the three(USERS, GROUPS, Roles) can and cannot do
+
+f) IAM has a Global View
+g) Permission are governed by Polocies(JSON)
+h) MFA(Multi Factor Authenticaon) can be setup
+i) IAM has prdefined 'managed Plocies'
+
+----------IAM Ends Here---------------------
