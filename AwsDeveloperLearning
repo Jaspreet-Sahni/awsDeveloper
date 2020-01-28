@@ -38,3 +38,46 @@ b) It mainly consist of the capability of
 c) AMI (AMAZON MACHINE IMAGE)
 
 -----------EC2 ENDS here------------
+
+-----------SSH Starts here------------
+
+
+SSH (Secure Shell)
+
+SSH is one of the most important function, It allows you to control a remote machine, all using the command Line.
+
+SSH on MAC---->
+How to access the EC2Machine through CMD
+1) Open CMd
+2) ssh ec2-user@35.180.100.144           // syntax ssh (ec2LinuxMachineUser@public ip)
+3) In a folder save your key file (eg: EC2Tutorial.pem) 
+  a) Open CMD from the saved folder
+  Actions to be done in CMD
+   b) ls    // Output EC2Tutorial.pem
+   c) ssh -i EC2Tutorial.pem ec2-user@35.180.100.144    (in CMD)
+   d) you will get a warning ( VIMP   Warning code 0644(UNPROTECTED PRIVATE KEY) for EC2Tutorial.pem)
+   e) chmod 0400 EC2Tutorial.pem   (in CMD)
+   f) ssh -i EC2Tutorial.pem ec2-user@35.180.100.144    (in CMD)
+  h) now you can sucess fully connected it
+  i) ping google.com
+  j) CTRL + D  to disconnect
+  
+  
+  SSH on Windows Machine-->
+  We will configure all  the required parameters necesaary for doing  SSH on Windows using PUTTY
+ 1) Download the Putty 64 bit
+ 2) Open the Windows and search PuttyGen to convert the already downloaded keygen(Private File) 
+     file (EC2Tutorial.pem to EC2Tutorial.ppk)
+ 3) Load the File (EC2Tutorial.pem) after openeing PUTTY Key Gen and Press SAVE PRIVATE KEY Button, name the file (EC2Tutorial.ppk)
+ 4) Press YES
+ 
+ Now Open Windows and open Putty and open Putty Program
+ 
+ 1) Now Paste the IP address of EC2Machine on HostName of Putty along with it like this: ec2-user@35.180.100.140
+ 2) Now Add 'MySession' and Save Session with eg:MySession
+ 3) Now close the Putty and open again and ho to connection-->SSH -> auth --> upload the PPK file just generated-->
+       -->Go Back to Session Save the session (MySession)---> Now Click the OPEn where you oploaded you SSH File
+ 4) Now your session gets created and EC2 Machine connected
+ 5) Test connection by writting whoamI or ping google.com
+
+--------SSH Ends Here -------------
