@@ -80,4 +80,18 @@ How to access the EC2Machine through CMD
  4) Now your session gets created and EC2 Machine connected
  5) Test connection by writting whoamI or ping google.com
 
+Now Open SSH on Windows10 Machine Only
+
+1) open CMD
+2) ssh
+3) ssh -i C:\?Users\Stephan\Downloads\EC2Tutorial.pem ec2-user@35.180.242.162
+4) in cmd write yes  (to trust the windows ip)
+5) if you get some warning
+  a) Then Right Ckick on the EC2Tutorial.pem and go to properties
+  b) propserties --> security --> advanced--> permission ---> Change(Write your Name Jaspreet) ---> disable  Inhertance 
+  c) Only you should be able to see that file and give full access to it
+  
+5) ssh -i C:\?Users\Stephan\Downloads\EC2Tutorial.pem ec2-user@35.180.242.162
+
 --------SSH Ends Here -------------
+
