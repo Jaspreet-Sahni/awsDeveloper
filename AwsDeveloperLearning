@@ -104,7 +104,35 @@ Now Open SSH on Windows10 Machine Only
   *) Authorised IP ranges -- IP4 and IP6
   *) Control of Inbound Network( from other to EC2 Instance-machine)
   *) Control of Outbound Network( from EC2 Instance-machine to Others)
-  
-
 
 ------------Security Group ENDS Here-----------
+
+------------Public ,Private, Elastic IP Starts Here-----------
+1) Public IP
+ a) Public Ip means machine can be identified on the internet (WWW)
+ b) Must be unique across the Whole Web (not two machine can have the same IP)
+
+2) Private IP
+ a) Private IP means the machine can only be identified on a private network only
+ b) The IP must be unique across the private network
+ c) But tow different private networks (two companies) can have the same IP
+ d) Machine connect to WWW using an internet gateway (a proxy)
+ e) Only a specified range of IP's can be used as private IP.
+ 
+3) ELastic IP (Simpaly means Fixed Public IP which not change)
+
+a) If you need to have a fixed public IP, for your instance you need a Elastic IP
+b) When you Stop and then Start an EC2 Instance, it can change its public IP
+c) An Elastic IP is a public IPv4 IP you own as long as you don't delete it
+d) You can attach it to one instance at a time
+e) With Elastic IP address,  you can quicky mask the failure of an instance or software by rapidly remapping the address to another
+   instance in your account
+f) You can only have 5 Elastic Ip in your account (you can ask AWS to increase that)
+g) Overall try to Avoid using Elastic IP.
+
+------------Public ,Private, Elastic IP ENDS Here-----------
+
+ 
+
+
+
