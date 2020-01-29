@@ -94,4 +94,17 @@ Now Open SSH on Windows10 Machine Only
 5) ssh -i C:\?Users\Stephan\Downloads\EC2Tutorial.pem ec2-user@35.180.242.162
 
 --------SSH Ends Here -------------
+------------Security Group Starts Here-----------
+1) Security Group are the fundamentals of Network Security in AWS
+2) They control how the traffic is allowed IN or OUT of your EC2 Machine
+3) It helps in trouble Shooting Network Issues
+4) Security Groups are acting as a "firewall' on EC2 instances
+5) They Regulate
+  *) Access to ports
+  *) Authorised IP ranges -- IP4 and IP6
+  *) Control of Inbound Network( from other to EC2 Instance-machine)
+  *) Control of Outbound Network( from EC2 Instance-machine to Others)
+  
 
+
+------------Security Group ENDS Here-----------
