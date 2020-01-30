@@ -50,8 +50,9 @@ c) AMI (AMAZON MACHINE IMAGE)
   a) Schedule Reserved Instance, Nw you can schedule a reserved instance like on any day , month ets eg: schedule a reserved instance on every
    last friday of a month and pay only for that period
 
-
 -----------EC2 ENDS here------------
+
+
 ------------ EBS Starts Here ------------
 EBS (ELASTIC BLOCK STORAGE) -- Amazon EBS allow you to create storage and attach them to EC2 instances. 
 Once attached we can create a file system on top of these volumes. Once attached we can create a file system on top of these volume,
@@ -60,7 +61,9 @@ Amazon EBS volumes are placed in a specific availiabilty zone and can be replica
 single component.
 
 
--EBS Volume Type:
+-EBS Volume Type 
+
+SSD Volume Types
 a) GENERAL PURPOSE SSD (GP2)--
   a.1) General purpose balances between both price and performance
   a.2) Ratio of 3 IOPS(input/Output operations per second) per GB with upto 10,000 IOPS and abillity to burst upto 3,000 IOPS for
@@ -70,12 +73,30 @@ b) Provisioned IOPS SSD (101)
   b.1) designed for I/O Intensive application such as large Relational or NoSQL databases.
   b.2) Used if you need more than 10,000 IOPS
   b.3) Can provision upto 20,000 IOPS per volume
+
+Magnitic Volume Type
+c) Throughput Optimised SSD (ST1)
+  Throughput optimised SSD used for
+  c.1) Big Data
+  c.2) Data WareHouse
+  c.3) Log processing
+  c.4) cannot be a boot Volume(A boot volume refers to that portion of the hard drive that contains the operating system)
+  
+d) Cold HDD (SC1)
+ d.1) Lowest Cost Storage for infrequently accessed workload
+ d.2) File Server
+ d.3)  cannot be a boot Volume(A boot volume refers to that portion of the hard drive that contains the operating system)
+ 
+e) Magnetic (standard)
+ e.1) Lowest cost per gigabyte of all EBS volume type that are bootable. Magnetic volume are ideals for workloads where data is 
+     accessed infrequently
   
 
 ------------ EBS ENDS Here ------------
 
------------SSH Starts here------------
 
+
+-----------SSH Starts here------------
 
 SSH (Secure Shell)
 
@@ -166,7 +187,17 @@ f) You can only have 5 Elastic Ip in your account (you can ask AWS to increase t
 g) Overall try to Avoid using Elastic IP.
 
 ------------Public ,Private, Elastic IP ENDS Here-----------
- 
 
+-----ELASTIC LOAD BALANCER Start Here-------
+
+Elastic load balancer, it helps to balance our load across multiple services
+
+Types of Load Balancer
+1) Application Load Balancer( It operates at OSI7 Layer)
+2) Network Load Balancer (It Operates at Layer4 and the most expensive load balancer)
+3) Classic Load Balancer
+
+
+-----ELASTIC LOAD BALANCER ENDS Here-------
 
 
