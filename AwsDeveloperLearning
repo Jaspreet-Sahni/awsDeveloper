@@ -28,6 +28,9 @@ i) IAM has prdefined 'managed Plocies'
 
 -----------EC2 Starts here------------
 2) EC2
+Amazon Elastic Cloud Compute (AMAZON EC2) is a web service that provides resizable compute capacity in the cloud. Amazon Ec2 reduces the
+time required to obtain and boot new server instances to minutes, allow you to quicky scale capacity both UP and Down.
+
 a) EC2 is the most popular AWS offering
 b) It mainly consist of the capability of
    .) Renting Virtual Machine (EC2)
@@ -36,6 +39,16 @@ b) It mainly consist of the capability of
    .) Scaling the services using an auto-scaling group (ASG)
 
 c) AMI (AMAZON MACHINE IMAGE)
+
+--EC2 options-
+ *) On Demand -- allow you to pay fixed rate per hour( or by seconds) with no commitment
+ *) Reserved -- provides you with capacity reservation and offer significant discount o hourly charge. It has 1 to Years Term
+ *) Spot  -- enables you to bid for whatever price for instance capacity. Good if your application has flexible start and End time
+ *) Dedicated Hosts -- Physical EC2 servers dedicated for your use wher its your server only and no other company sharing that server.
+
+ --Reserved Instance
+  a) Schedule Reserved Instance, Nw you can schedule a reserved instance like on any day , month ets eg: schedule a reserved instance on every
+   last friday of a month and pay only for that period
 
 -----------EC2 ENDS here------------
 
