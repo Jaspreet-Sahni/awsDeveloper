@@ -197,6 +197,22 @@ Types of Load Balancer
 2) Network Load Balancer (It Operates at Layer4 and the most expensive load balancer)
 3) Classic Load Balancer
 
+1) Application Load Balancer-- are best suited for load balancing of HTTP and HTTPS traffic. They operate at layer7 and application 
+                              aware. They are intelligent and you can create advance request routing, sending specified request to 
+                               specific web servers.                           
+ 2) Network Load Balancer -- are best suited for load balancing of TCP traffic where extreme performance is required. 
+                             Operating at Layer 4, Network Load Balancer are capable of handling millions of request per second
+                             while maintaining extra low-latencies
+                             Use for Extreme Performace (Very Costly load balancer)
+                             
+ 3) Classic Load balancer -- are legacy elastic load balancer, You can load HTTP/HTTPS application and use layer-7 specific features,
+                             such as X-Forwarded and sticky sessions. you can also use strict layer 4 Load Balancing for applications that rely 
+                             purely on  TCP protocol.
+Imp Points                             
+  1)504 Error means the gateway hs timeout. This means that application is not responding within the ideal timeout period
+    Troubleshoot the application: Is it the Web Server or Database Server
+  2) If you need the IPv4 address of your end user, look for the X-Forwarded-For Header.
+
 OSI7 Models-- It conssist of 7 Layers in sequence order as given below
 
 1) Physical Layer - The physical layer is responsible for the transmission and reception of unstructured raw data
@@ -220,6 +236,13 @@ OSI7 Models-- It conssist of 7 Layers in sequence order as given below
                        data compression and encryption/decryption
                        
  7) Application Layer: High-level APIs, including resource sharing, remote file access
+ 
+ 
+ 
+  X-Forwarded-For (XFF)--
+ The X-Forwarded-For (XFF) HTTP header field is a common method for identifying the 
+ originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.
+  To see the original IP address of the client, the X-Forwarded-For request header is used.
 
 -----ELASTIC LOAD BALANCER ENDS Here-------
 
