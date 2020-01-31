@@ -197,6 +197,29 @@ Types of Load Balancer
 2) Network Load Balancer (It Operates at Layer4 and the most expensive load balancer)
 3) Classic Load Balancer
 
+OSI7 Models-- It conssist of 7 Layers in sequence order as given below
+
+1) Physical Layer - The physical layer is responsible for the transmission and reception of unstructured raw data
+                   between a device and a physical transmission medium. It converts the digital bits into electrical, radio, 
+                   The components of a physical layer can be described in terms of a network topology. Bluetooth, Ethernet, and USB.
+ 
+2) Data Link Layer: Reliable transmission of data frames between two nodes connected by a physical layer
+                    The data link layer provides node-to-node data transfer—a link between two directly connected nodes.
+                    
+3) Network Layer: The network layer provides the functional and procedural means of transferring variable length data sequences 
+                  (called packets) from one node to another connected in "different networks".
+                  
+4) Transport Layer: Reliable transmission of data segments between points on a network, 
+                     including segmentation(dividing a data packet into smaller units for transmission over the network), 
+                     acknowledgement(receipt of message) and multiplexing.
+
+5) Session Layer: Managing communication sessions, i.e., continuous exchange of information 
+                  in the form of multiple back-and-forth transmissions between two nodes
+                  
+6) Presentation Layer: Translation of data between a networking service and an application; including character encoding, 
+                       data compression and encryption/decryption
+                       
+ 7) Application Layer: High-level APIs, including resource sharing, remote file access
 
 -----ELASTIC LOAD BALANCER ENDS Here-------
 
