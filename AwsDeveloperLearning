@@ -257,6 +257,18 @@ OSI7 Models-- It conssist of 7 Layers in sequence order as given below
   Rote53 --> Register Domain
 
 --------------ROUTE53 Ends Here-------------------
+------------EC2 User Data Starts Here----------------
+
+It is possible to bootstrap our instances using an EC2 User Data Script
+Bootstaping means launching command when machine starts
+This Script is only run once at the instance first start
+EC2 User Data is used to automate boot tasks such as
+*) Installing Updates
+*) Installing Softwares
+*) Downloading common files from the internet
+*) Anything else you want
+
+------------EC2 User Data  Ends Here----------------
 
 
 
